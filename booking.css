@@ -1,0 +1,84 @@
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	/*background-image: url(back.jpeg);*/ 
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.box{
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	width:700px;
+	background: #fff;
+	padding: 40px;
+	border: 1px solid rgba(0,0,0,.1);
+	box-shadow: 0 5px 10px rgba(0,0,0,.3);
+}
+.box h2{
+	margin: 0 0 40px;
+	padding: 0;
+	color: #f7497d;
+	text-transform: uppercase;
+}
+.box input{
+	padding: 10px 0px;
+	margin-bottom: 30px;
+
+}
+.box input,button{
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	border: none;
+	border-bottom: 2px solid #999;
+
+}
+.box button
+{	
+	padding: 12px;
+	font-size: 15px;
+	border-radius: 10px;
+	margin-top:60px;
+	border-bottom: none;
+	cursor:pointer;
+	background: #f7497d;
+	color:#fff;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+.box form div{
+	position: relative;
+}
+
+.box form div label{
+	position: absolute;
+	top:10px;
+	left:0;
+	pointer-events: none;
+	color:#999;
+	transition: .5s;
+}
+.box input:valid ~ label,
+.box input:focus ~ label{
+	top:-12px;
+	left:0;
+	color:#f7497d;
+	font-weight: bold;
+	font-size: 12px;
+}
+.box input:valid,.box input:focus,p.focus 
+{
+	border-bottom:2px solid #f7497d;
+}
+.box input[type=radio]:required:invalid::-webkit-datetime-edit {
+    color: black;
+}
+.box input[type=date]:focus::-webkit-datetime-edit {
+    color: black !important;
+}

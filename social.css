@@ -1,0 +1,83 @@
+
+.handels{
+	position:absolute;
+    top:40%;
+    left: 50%;
+}
+.handels ul{
+	position:relative;
+	margin:0;
+	padding:0;
+	display:flex;
+}
+.handels ul li{
+	position:relative;
+	list-style: none;
+	width:60px;
+	height:60px;
+	margin: 0 30px;
+	transform: rotate(-30deg) skew(25deg);
+	background: #ccc;
+}
+.handels ul li span
+{
+	position:absolute;
+	top: 0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:#000;
+	transition:0.5s;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	color:#fff;
+	font-size: 30px !important;
+
+}
+.handels ul li:hover span:nth-child(5){
+        transform: translate(40px, -40px);
+        opacity: 1;
+    }
+    .handels ul li:hover span:nth-child(4){
+        transform: translate(30px, -30px);
+        opacity: 0.8;
+    }
+    .handels ul li:hover span:nth-child(3){
+        transform: translate(20px, -20px);
+        opacity: 0.6;
+    }
+    .handels ul li:hover span:nth-child(2){
+        transform: translate(10px, -10px);
+        opacity: 0.4;
+    }
+    .handels ul li:hover span:nth-child(1){
+        transform: translate(0,0);
+        opacity: 0.2;
+    }
+
+    .handels ul li:nth-child(1) span
+    {
+    	background: #3b5999;
+    }
+    .handels ul li:nth-child(2) span
+    {
+    	background: #55acee;
+    }
+    .handels ul li:nth-child(3) span
+    {
+    	background: #0088cc;
+    }
+    .handels ul li:nth-child(5) span
+    {
+    	background: #0077B5;
+    }
+    .handels ul li:nth-child(4) span
+    {
+    	background: #e4405f;
+    }
+
+    .handels ul li:hover span
+    {
+    	box-shadow: -1px 1px 1px rgba(0,0,0,.1);
+    }
